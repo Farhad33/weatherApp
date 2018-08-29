@@ -1,0 +1,45 @@
+$Bittersweet: #fc7769
+
+body
+	background-color: $Bittersweet
+
+.parent-location
+	display: flex
+	flex-direction: column
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	margin: auto
+	width: 800px
+	height: 450px
+	background-color: white
+	display: flex
+	justify-content: center
+	align-items: center
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+	.or
+		margin: 1em 0
+
+@media (max-width: 800px)
+	.parent-location
+		width: 100%
+
+.geoLocation
+	span
+		border-bottom: 1px dotted gray
+
+.input-city
+	display: flex
+	flex-direction: row
+	width: calc(25em + 1vw)
+	border-bottom: 2px solid
+	input
+		font-size: 2em
+		text-align: center
+	input:focus
+		outline: none
+	svg
+		width: 3em
+		height: 3em

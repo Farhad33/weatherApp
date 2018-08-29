@@ -1,0 +1,20 @@
+export default {
+	"01d": "wi-day-sunny",
+	"01n": "wi-night-clear",
+	"02d": "wi-day-cloudy",
+	"02n": "wi-night-cloudy",
+	"03d": "wi-day-cloudy-high",
+	"03n": "wi-night-alt-cloudy-high",
+	"04d": "wi-day-sunny-overcast",
+	"04n": "wi-night-alt-partly-cloudy",
+	"09d": "wi-day-showers",
+	"09n": "wi-night-showers",
+	"10d": "wi-day-rain",
+	"10n": "wi-night-rain",
+	"11d": "wi-day-thunderstorm",
+	"11n": "wi-night-thunderstorm",
+	"13d": "wi-day-snow",
+	"13n": "wi-night-snow",
+	"50d": "wi-day-rain-mix",
+	"50n": "wi-night-rain-mix"
+};

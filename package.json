@@ -1,0 +1,54 @@
+{
+	"name": "weatherapp",
+	"version": "1.0.0",
+	"description": "A weather application that gives you a 7-day forecast for the location of your choice/current location",
+	"main": "index.js",
+	"scripts": {
+		"start": "npm-run-all build pro",
+		"pro": "nodemon server.js",
+		"dev": "webpack-dev-server --mode development --open --hot",
+		"build": "webpack --mode production"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Farhad33/weatherApp.git"
+	},
+	"keywords": [
+		"React-Redux"
+	],
+	"author": "Majid Rahimi",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Farhad33/weatherApp/issues"
+	},
+	"homepage": "https://github.com/Farhad33/weatherApp#readme",
+	"devDependencies": {
+		"babel-core": "^6.26.3",
+		"babel-loader": "^7.1.5",
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-react": "^6.24.1",
+		"babel-preset-stage-2": "^6.24.1",
+		"css-loader": "^1.0.0",
+		"html-webpack-plugin": "^3.2.0",
+		"mini-css-extract-plugin": "^0.4.2",
+		"node-sass": "^4.9.3",
+		"nodemon": "^1.18.3",
+		"npm-run-all": "^4.1.3",
+		"sass-loader": "^7.1.0",
+		"style-loader": "^0.22.1",
+		"svg-sprite-loader": "^3.9.2",
+		"webpack": "^4.17.1",
+		"webpack-cli": "^3.1.0",
+		"webpack-dev-server": "^3.1.5"
+	},
+	"dependencies": {
+		"express": "^4.16.3",
+		"react": "^16.4.2",
+		"react-dom": "^16.4.2",
+		"react-redux": "^5.0.7",
+		"react-router": "^4.3.1",
+		"react-router-dom": "^4.3.1",
+		"redux": "^4.0.0",
+		"redux-thunk": "^2.3.0"
+	}
+}

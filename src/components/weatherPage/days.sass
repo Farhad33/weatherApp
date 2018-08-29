@@ -1,0 +1,33 @@
+$BittersweetFilter: invert(73%) sepia(62%) saturate(3777%) hue-rotate(315deg) brightness(97%) contrast(104%)
+.seven-day
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	flex-wrap: wrap
+
+@media (max-width: 672px)
+	.seven-day
+		justify-content: center
+
+.day-parent
+	display: flex
+	flex-direction: column
+	justify-content: center
+	text-align: center
+	width: 4em
+	margin: 1em
+	.day-temp
+		display: flex
+		flex-direction: column
+		color: gray
+		font-weight: lighter
+		text-align: center
+		font-size: .8em
+	.day-icon
+		width: 3em
+		height: 3em
+		margin: 5px auto
+	.day-of-week
+		color: gray
+		font-weight: lighter
+		font-size: .8em

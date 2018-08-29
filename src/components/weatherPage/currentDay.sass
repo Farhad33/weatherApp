@@ -1,0 +1,68 @@
+$Bittersweet: #fc7769
+$BittersweetFilter: invert(73%) sepia(62%) saturate(3777%) hue-rotate(315deg) brightness(97%) contrast(104%)
+
+.current-day-parent
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	margin: 1em
+
+.date-format
+	font-size: calc(13px + .9vw)
+	color: gray
+	font-weight: lighter
+
+.current-status
+	font-size: calc(12px + .9vw)
+	color: gray
+	font-weight: lighter
+	margin-top: .2em
+
+.current-day-temp
+	position: relative
+	width: 500px
+	height: 120px
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	margin-bottom: .5em
+	.current-icon
+		width: 10em
+		height: 10em
+		filter: $BittersweetFilter
+	ul
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		li
+			display: flex
+			justify-content: space-between
+			width: 150px
+		span
+			color: $Bittersweet
+			font-weight: lighter
+			font-size: calc(10px + .5vw)
+
+.one-temp
+	font-size: calc(25px + 1.2vw)
+	line-height: 120px
+	vertical-align: middle
+	color: $Bittersweet
+
+@media (max-width: 630px)
+	.current-day-temp
+		width: 400px
+		.current-icon
+			width: 6em
+			height: 6em
+
+@media (max-width: 440px)
+	.current-day-temp
+		width: 350px
+
+@media (max-width: 385px)
+	.current-day-temp
+		width: 250px
+		ul
+			li
+				width: 100px
